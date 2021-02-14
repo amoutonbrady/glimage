@@ -24,7 +24,7 @@
     "dev": "vite",
     "build": "vite build && tsc",
     "format": "prettier --write \"{src,playground}/**/*.{html,ts}\"",
-    "check": "package-check"
+    "prepublishOnly": "pnpm check && pnpm build"
   },
   "keywords": [
     "image",
