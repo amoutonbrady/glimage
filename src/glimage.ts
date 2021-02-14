@@ -34,14 +34,14 @@ const defaultOptions: Options = {
 };
 
 /**
- * imagine takes a list of sources (URLs or FileList from an input[type="file"]) and glue them together to form a single image.
+ * glimage takes a list of sources (URLs or FileList from an input[type="file"]) and glue them together to form a single image.
  *
  * @param sources {string[] | FileList} - List of images. Can be a list of URLs or a FileList from an input[type="file"]
  * @param options {Partial<Options>} - List of options
  *
  * @example
  * ```ts
- * import { imagine } from 'imagine';
+ * import { glimage } from 'glimage';
  *
  * const img = document.querySelector('img');
  * const input = document.querySelector('input');
@@ -49,7 +49,7 @@ const defaultOptions: Options = {
  * input.addEventListener('change', async (e) => {
  *   const { files } = e.target as HTMLInputElement;
  *
- *   const [src, blob] = await imagine(files, {
+ *   const [src, blob] = await glimage(files, {
  *     direction: 'vertical',
  *     gap: 100,
  *     color: 'red',
@@ -61,7 +61,7 @@ const defaultOptions: Options = {
  * });
  * ```
  */
-export async function imagine(
+export async function glimage(
   sources: string[] | FileList,
   options?: Partial<Options>,
 ) {

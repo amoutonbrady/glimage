@@ -5,5 +5,5 @@
     "declarationDir": "dist",
     "emitDeclarationOnly": true
   },
-  "include": ["src/imagine.ts"]
+  "include": ["src/glimage.ts"]
 }

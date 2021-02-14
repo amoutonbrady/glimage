@@ -1,33 +1,34 @@
 {
-  "name": "imagine",
+  "name": "glimage",
   "version": "1.0.0",
   "description": "0 dependencies, less than 1kb library to glue images together",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amoutonbrady/imagine.git"
+    "url": "https://github.com/amoutonbrady/glimage.git"
   },
   "files": [
     "dist"
   ],
-  "main": "./dist/imagine.umd.js",
-  "module": "./dist/imagine.es.js",
-  "browser": "./dist/imagine.iife.js",
-  "types": "./dist/imagine.d.ts",
+  "main": "./dist/glimage.umd.js",
+  "module": "./dist/glimage.es.js",
+  "browser": "./dist/glimage.iife.js",
+  "types": "./dist/glimage.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/imagine.es.js",
-      "require": "./dist/imagine.umd.js",
-      "browser": "./dist/imagine.iife.js"
+      "import": "./dist/glimage.es.js",
+      "require": "./dist/glimage.umd.js",
+      "browser": "./dist/glimage.iife.js"
     }
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc",
     "format": "prettier --write \"{src,playground}/**/*.{html,ts}\"",
-    "prepublishOnly": "check-package && pnpm build"
+    "prepublishOnly": "package-check && pnpm build"
   },
   "keywords": [
     "image",
+    "glimage",
     "merge",
     "image-merge",
     "glue-images"
