@@ -1,4 +1,4 @@
-# `glimage`
+# `image-wire`
 
 A minimalistic, dependency free library to merge multiple images into one.
 
@@ -7,7 +7,7 @@ A minimalistic, dependency free library to merge multiple images into one.
 ## Why?
 
 The specific use case case that led to the making of this library is to be able to create a single image from many for idendity documents upload.
-Say you have to upload the recto and verso of your idenditity paper but your backend only accept a single file. This is where `glimage` comes in handy.
+Say you have to upload the recto and verso of your idenditity paper but your backend only accept a single file. This is where `image-wire` comes in handy.
 
 => [a] + [b] = [ab]
 
@@ -15,19 +15,19 @@ Say you have to upload the recto and verso of your idenditity paper but your bac
 
 ```bash
 # npm
-$ npm install glimage
+$ npm install image-wire
 
 # pnpm
-$ pnpm add glimage
+$ pnpm add image-wire
 
 # yarn
-$ yarn add glimage
+$ yarn add image-wire
 ```
 
 ## Usage
 
 ```js
-import { glimage } from 'glimage';
+import { image-wire } from 'image-wire';
 
 const img = document.querySelector('img');
 const input = document.querySelector('input');
@@ -35,7 +35,7 @@ const input = document.querySelector('input');
 input.addEventListener('change', async (e) => {
   const { files } = e.target;
 
-  const [src, blob] = await glimage(files, {
+  const [src, blob] = await image-wire(files, {
     direction: 'vertical',
     gap: 100,
     color: 'red',
@@ -49,17 +49,17 @@ input.addEventListener('change', async (e) => {
 
 ## API
 
-### glimage(sources: string[] | FileList, options?: Partial<Options>)
+### image-wire(sources: string[] | FileList, options?: Partial<Options>)
 
 Returns: `Promise<[string, Blob]>`, a tuple with the newly created img url and a blob ready for upload
 
-`glimage` takes a list of strings (which should be a list of URLs) or a `FileList` which is what `e.target.files` returns on an input of type file.
+`image-wire` takes a list of strings (which should be a list of URLs) or a `FileList` which is what `e.target.files` returns on an input of type file.
 
 ### options
 
 - Type: `Object`
 
-List of options to pass as a second argument to `glimage`
+List of options to pass as a second argument to `image-wire`
 
 #### options.gap
 
@@ -102,10 +102,10 @@ There is no default.
 - Clone the repo. locally
 - Run `pnpm install` (you might need to install [pnpm](https://pnpm.js.org/) first)
 - Run `pnpm dev`
-- Open `localhost:3000` and do your changes to [src/glimage.ts](./src/index.ts)
+- Open `localhost:3000` and do your changes to [src/image-wire.ts](./src/index.ts)
 - Commit & push
 - Make a PR
 
 ## Prior work
 
-- [merge-images](https://github.com/lukechilds/merge-images) - A library to merge and compose images on top of each other. `glimage` is inspired by it.
+- [merge-images](https://github.com/lukechilds/merge-images) - A library to merge and compose images on top of each other. `image-wire` is inspired by it.

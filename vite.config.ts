@@ -8,9 +8,9 @@ export default defineConfig({
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
     lib: {
-      entry: resolve(__dirname, 'src/glimage.ts'),
+      entry: resolve(__dirname, 'src/image-wire.ts'),
       formats: ['es', 'iife', 'umd'],
-      name: 'glimage',
+      name: 'imageWire',
     },
   },
 });

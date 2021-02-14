@@ -1,23 +1,23 @@
 {
-  "name": "glimage",
+  "name": "image-wire",
   "version": "1.0.0",
   "description": "0 dependencies, less than 1kb library to glue images together",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amoutonbrady/glimage.git"
+    "url": "https://github.com/amoutonbrady/image-wire.git"
   },
   "files": [
     "dist"
   ],
-  "main": "./dist/glimage.umd.js",
-  "module": "./dist/glimage.es.js",
-  "browser": "./dist/glimage.iife.js",
-  "types": "./dist/glimage.d.ts",
+  "main": "./dist/image-wire.umd.js",
+  "module": "./dist/image-wire.es.js",
+  "browser": "./dist/image-wire.iife.js",
+  "types": "./dist/image-wire.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/glimage.es.js",
-      "require": "./dist/glimage.umd.js",
-      "browser": "./dist/glimage.iife.js"
+      "import": "./dist/image-wire.es.js",
+      "require": "./dist/image-wire.umd.js",
+      "browser": "./dist/image-wire.iife.js"
     }
   },
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "keywords": [
     "image",
-    "glimage",
+    "image-wire",
     "merge",
     "image-merge",
     "glue-images"

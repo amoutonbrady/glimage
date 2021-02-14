@@ -1,10 +1,10 @@
-import { glimage } from '../src/glimage';
+import { imageWire } from '../src/image-wire';
 
 const input = document.querySelector('input');
 const img = document.querySelector('img');
 
 input.addEventListener('change', async (e) => {
   const { files } = e.target as HTMLInputElement;
-  const [src] = await glimage(files);
+  const [src] = await imageWire(files);
   img.src = src;
 });

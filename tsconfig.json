@@ -5,5 +5,5 @@
     "declarationDir": "dist",
     "emitDeclarationOnly": true
   },
-  "include": ["src/glimage.ts"]
+  "include": ["src/image-wire.ts"]
 }
