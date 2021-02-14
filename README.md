@@ -106,4 +106,4 @@ There is no default.
 
 ## Prior work
 
-- [merge-images][https://github.com/lukechilds/merge-images] - A library to merge and compose images on top of each other. `imagine` is inspired by it.
+- [merge-images](https://github.com/lukechilds/merge-images) - A library to merge and compose images on top of each other. `imagine` is inspired by it.
