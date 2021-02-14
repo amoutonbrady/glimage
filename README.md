@@ -1,8 +1,12 @@
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/image-wire)
+
 # `image-wire`
 
 A minimalistic, dependency free library to merge multiple images into one.
 
 <img src=".github/demo.gif">
+
+## [Interactive Demo](https://codesandbox.io/s/image-wire-bsldc?file=/src/index.ts)
 
 ## Why?
 
