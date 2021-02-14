@@ -11,13 +11,11 @@
   ],
   "main": "./dist/image-wire.cjs.js",
   "module": "./dist/image-wire.es.js",
-  "browser": "./dist/image-wire.iife.js",
   "types": "./dist/image-wire.d.ts",
   "exports": {
     ".": {
       "import": "./dist/image-wire.es.js",
-      "require": "./dist/image-wire.cjs.js",
-      "browser": "./dist/image-wire.iife.js"
+      "require": "./dist/image-wire.cjs.js"
     }
   },
   "scripts": {
