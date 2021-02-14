@@ -1,6 +1,6 @@
 {
   "name": "image-wire",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "0 dependencies, less than 1kb library to glue images together",
   "repository": {
     "type": "git",
