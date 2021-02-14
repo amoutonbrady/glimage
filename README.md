@@ -49,47 +49,49 @@ input.addEventListener('change', async (e) => {
 
 ## API
 
-### glimage(sources: string[] | FileList, options?: Partial<Options>): Promise<[string, Blob]>
+### glimage(sources: string[] | FileList, options?: Partial<Options>)
+
+Returns: `Promise<[string, Blob]>`, a tuple with the newly created img url and a blob ready for upload
 
 `glimage` takes a list of strings (which should be a list of URLs) or a `FileList` which is what `e.target.files` returns on an input of type file.
 
 ### options
 
-Type: `Object`
+- Type: `Object`
 
 List of options to pass as a second argument to `glimage`
 
 #### options.gap
 
-Type: `number`
-Default: 0
+- Type: `number`
+- Default: 0
 
 A number indicating the gap (in pixels) between each images.
 
 #### options.direction
 
-Type: `'horizontal' | 'vertical'`
-Default: 'horizontal'
+- Type: `'horizontal' | 'vertical'`
+- Default: 'horizontal'
 
 A string indicating in which direction the image are going to be glued together.
 
 #### options.type
 
-Type: `string & ('image/jpeg' | 'image/png' | 'image/webp')`
-Default: 'image/png'
+- Type: `string & ('image/jpeg' | 'image/png' | 'image/webp')`
+- Default: 'image/png'
 
 A string indicating the image format.
 
 #### options.quality
 
-Type: `number`
-Default: 0.92
+- Type: `number`
+- Default: 0.92
 
 A number between **0 and 1** indicating the image quality to use for image formats that use lossy compression such as image/jpeg and image/webp.
 
 #### options.color
 
-Type: `string | CanvasGradient | CanvasPattern`
+- Type: `string | CanvasGradient | CanvasPattern`
 
 A string, canvas gradient or canvas pattern used to fill the background.
 There is no default.
