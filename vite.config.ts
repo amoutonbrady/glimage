@@ -9,7 +9,7 @@ export default defineConfig({
     emptyOutDir: true,
     lib: {
       entry: resolve(__dirname, 'src/image-wire.ts'),
-      formats: ['es', 'iife', 'umd'],
+      formats: ['es', 'iife', 'cjs'],
       name: 'imageWire',
     },
   },
